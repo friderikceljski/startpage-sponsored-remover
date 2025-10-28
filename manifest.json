@@ -1,0 +1,15 @@
+{
+  "name": "Startpage Sponsored Remover",
+  "description": "An extension that removes sponsored hits from Startpage search results",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://www.startpage.com/do/search?q=*",
+        "https://www.startpage.com/sp/search"
+      ]
+    }
+  ]
+}
