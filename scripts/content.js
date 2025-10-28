@@ -1,9 +1,9 @@
-function removeSponsoredSection(sponsoredDiv) {
-    if (!sponsoredDiv) {
+function hideElement(el) {
+    if (!el) {
         return;
     }
 
-    sponsoredDiv.style.display = "none";
+    el.style.display = "none";
 }
 
-removeSponsoredSection(document.getElementById("gcsa-top"));
+hideElement(document.getElementById("gcsa-top"));
